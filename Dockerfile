@@ -11,6 +11,3 @@ ENV MB_SECURITY_XSS=high
 ENV MB_JAVA_TOOL_OPTIONS="-Xmx512m -Xms256m"
 
 # Add other instructions and configurations if needed
-
-# Start Metabase
-CMD ["java", "-jar", "app/metabase.jar"]
