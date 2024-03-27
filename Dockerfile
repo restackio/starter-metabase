@@ -1,5 +1,5 @@
 # Use the official Metabase base image
-FROM metabase/metabase:latest
+FROM metabase/metabase:v0.49.1
 
 # Set environment variables
 # Set the email address from which Metabase will send emails

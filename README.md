@@ -14,3 +14,6 @@ Add Metabase to your Restack workspace and deploy it instantly on Restack cloud 
 2. Follow steps in the [official Restack documentation](https://www.restack.io/docs/metabase)
 3. Once you open a pull request a preview environment will be generated.
 4. Once your pull request is merged your initial Metabase application will be provisioned with latest code from the "main" branch.
+
+### Embedding your dashboard in external application
+For embedding your dashboard please follow [this instructions](https://www.metabase.com/docs/latest/embedding/static-embedding)
