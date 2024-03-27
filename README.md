@@ -17,3 +17,6 @@ Add Metabase to your Restack workspace and deploy it instantly on Restack cloud 
 
 ### Embedding your dashboard in external application
 For embedding your dashboard please follow [this instructions](https://www.metabase.com/docs/latest/embedding/static-embedding)
+Metabase will provide a script that can be run on your end in order to get the url to be used on the iframe. How this iframe is implemented depends on your type of application, but the only thing needed from Metabase is:
+1. Embedding is enabled in admin settings
+2. Dashboard is published
