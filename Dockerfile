@@ -2,13 +2,10 @@
 FROM metabase/metabase:v0.49.1
 
 # Copy additional clickhouse plugin
-USER root
 RUN mkdir -p /plugins
 RUN chmod -R 755 /plugins
 
 COPY plugins/ /plugins
-
-USER metabase
 
 # Set environment variables
 # Set the email address from which Metabase will send emails
