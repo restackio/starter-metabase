@@ -1,6 +1,9 @@
 # Use the official Metabase base image
 FROM metabase/metabase:v0.49.1
 
+# Create the plugins directory and set permissions
+RUN mkdir -p /plugins && chmod -R 755 /plugins
+
 # Copy additional clickhouse plugin
 COPY plugins/ /plugins
 
@@ -25,3 +28,6 @@ ENV MB_SECURITY_XSS=high
 
 # Configure Java runtime options for Metabase
 ENV MB_JAVA_TOOL_OPTIONS="-Xmx512m -Xms256m"
+
+# Set the plugins directory environment variable
+ENV MB_PLUGINS_DIR=/plugins
