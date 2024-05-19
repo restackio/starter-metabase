@@ -2,7 +2,7 @@
 FROM metabase/metabase:v0.49.1
 
 # Copy additional clickhouse plugin
-COPY plugins/ /modules
+COPY plugins/ /plugins
 
 # Set environment variables
 # Set the email address from which Metabase will send emails
