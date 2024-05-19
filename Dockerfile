@@ -1,6 +1,7 @@
 # Use the official Metabase base image
 FROM metabase/metabase:v0.49.1
 
+# Copy additional clickhouse plugin
 COPY plugins/ /plugins
 
 # Set environment variables
