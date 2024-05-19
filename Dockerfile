@@ -2,6 +2,9 @@
 FROM metabase/metabase:v0.49.1
 
 # Copy additional clickhouse plugin
+RUN mkdir -p /plugins
+RUN chown -R metabase:metabase /plugins
+
 COPY plugins/ /plugins
 
 # Set environment variables
