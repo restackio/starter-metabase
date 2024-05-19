@@ -1,6 +1,8 @@
 # Use the official Metabase base image
 FROM metabase/metabase:v0.49.1
 
+COPY plugins/ /plugins
+
 # Set environment variables
 # Set the email address from which Metabase will send emails
 ENV MB_EMAIL_FROM_ADDRESS="your_email@example.com"
