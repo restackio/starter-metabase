@@ -9,9 +9,12 @@ async def main():
     metabase_app = {
         'name': 'metabase',
         'dockerFilePath': 'Dockerfile',
+
+        # This deploys a pre-configured Metabase instance with a SQL database
+        'productName': 'Metabase',
     }
     await restack_cloud_client.stack({
-        'name': 'metabase test',
+        'name': 'Metabase stack',
         'previewEnabled': False,
         'applications': [metabase_app],
     })
